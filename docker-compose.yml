@@ -11,6 +11,7 @@ services:
       - KC_BOOTSTRAP_ADMIN_PASSWORD=${KC_PASS}
       - KC_HOSTNAME=${STATIC_IP}
       - KC_HTTP_ENABLED=true
+      - KC_PROXY=edge
       - KC_DB=postgres
       - KC_DB_URL=jdbc:postgresql://${KC_DB_HOST}:${KC_DB_PORT}/${KC_DB_NAME}
       - KC_DB_USERNAME=${KC_DB_USER}
